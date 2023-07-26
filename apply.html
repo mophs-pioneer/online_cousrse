@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mophs Online Courses</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .application-form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .application-form h2 {
+      text-align: center;
+    }
+
+    .application-form label {
+      display: block;
+    }
+
+    .application-form input[type="text"],
+    .application-form select {
+      width: 100%;
+      padding: 5px;
+    }
+
+    .application-form button[type="submit"] {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer{
+        margin-top: 230px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Mophs codding school</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="browse.html">Courses</a></li>
+        <li><a href="#" id="apply-link">Apply</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="application-form" id="application-form">
+      <h2>Application Form</h2>
+      <form action="submit.php" method="POST">
+        <div>
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first_name" required>
+        </div>
+        <div>
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last_name" required>
+        </div>
+        <div class="form-group">
+            <label for="id-number">ID Number:</label>
+            <input type="text" id="id-number" name="id_number" required>
+          </div>
+          <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+          </div>
+          <div class="form-group">
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+          </div>
+          <div class="form-group">
+            <label for="phone-number">Phone Number:</label>
+            <input type="text" id="phone-number" name="phone_number" required>
+          </div>
+          <div class="form-group">
+            <label for="course">Course Applying:</label>
+            <select id="course" name="course_applying" required>
+              <option value="" disabled selected>Select a course</option>
+              <option value="course1">front End Developer</option>
+              <option value="course2">Graphics Design</option>
+              <option value="course3">Back End Developer</option>
+            </select>
+          </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Mophs Online Courses. All rights reserved.</p>
+  </footer>
+ 
+  <script>
+    const applyLink = document.getElementById('apply-link');
+    const applicationForm = document.getElementById('application-form');
+
+    applyLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      applicationForm.style.display = 'block';
+      applyLink.style.display = 'none';
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #16161a;
+  }
+  
+  header {
+    background-color: #ebe4e4;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  header h1::first-letter{
+    color: blue;
+    border: 3px solid red;
+    border-right: transparent;
+  }
+  
+  nav ul {
+    list-style: none;
+   position: sticky;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 30px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #080808;
+    font-size: 20px;
+    font-weight: 100;
+    transition: .3s;
+  }
+  nav ul li a:hover{
+    color: crimson;
+  }
+  .hero {
+    background-color: #85d4f3ea;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .course-listing {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .course-listing h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .course-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f6f7f8ea;
+    border: 1px solid #ddd;
+  }
+  
+  .course-card img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .course-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .course-card p {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  /**.application-form {
+    display: none;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+  }
+  
+  .application-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .form-group button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }*/
+  
+  
+  
+  
